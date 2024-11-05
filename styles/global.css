@@ -1,0 +1,59 @@
+:root {
+  --darkest: rgba(19, 19, 19, 1);
+  --accent: rgba(94, 113, 106, 1);
+  --lightest: rgba(255, 255, 255, 1);
+}
+
+@font-face {
+  font-family: "ITC Franklin Gothic Std-Book";
+  src: url("assets/fonts/ITCFranklinGothicStd-Book.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC Franklin Gothic Std-Demi";
+  src: url("assets/fonts/ITCFranklinGothicStd-Demi.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    #131313 89.59%,
+    rgb(26, 26, 26) 96.25%,
+    #282828 100%
+  );
+  width: 375px;
+  height: 667px;
+}
+
+/*---- Brand Carousel ----*/
+.brand-carousel-wrapper {
+  padding: 8px 0;
+  color: var(--lightest);
+  height: 42px;
+  border: solid var(--accent, #5e716a);
+  border-width: 1px 0;
+  overflow: hidden;
+}
+
+.brand-carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  position: relative;
+}
+
+.brand-carousel img {
+  flex-shrink: 0;
+}
