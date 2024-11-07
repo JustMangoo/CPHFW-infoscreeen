@@ -35,25 +35,4 @@ body {
   height: 667px;
 }
 
-/*---- Brand Carousel ----*/
-.brand-carousel-wrapper {
-  padding: 8px 0;
-  color: var(--lightest);
-  height: 42px;
-  border: solid var(--accent, #5e716a);
-  border-width: 1px 0;
-  overflow: hidden;
-}
 
-.brand-carousel {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  height: 100%;
-  position: relative;
-}
-
-.brand-carousel img {
-  flex-shrink: 0;
-}

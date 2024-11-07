@@ -13,12 +13,15 @@
   font-style: normal;
 }
 
-.index-page {
+#index-page {
   height: 100%;
   padding-bottom: 24px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
+
+/*---- Banner ----*/
 
 header {
   position: relative;
@@ -29,6 +32,7 @@ header {
   overflow: hidden;
   height: 100%;
   padding: 24px;
+  transition: height 0.5s ease-out, padding 0.5s ease-out;
 }
 header::before {
   content: "";
@@ -48,7 +52,10 @@ header::before {
   z-index: -1;
 }
 
-/* Video background styling */
+#index-page.active header {
+  padding: 8px;
+}
+
 .runway-video {
   position: absolute;
   top: 0;
@@ -56,24 +63,103 @@ header::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2; /* Send video to the background */
+  z-index: -2;
 }
 
-header img {
+#index-page header img {
   width: 109.457px;
   height: auto;
   object-fit: fit;
+  transition: width 0.5s ease-out;
 }
 
-a {
+#index-page.active header img {
+  width: 37.797px;
+}
+
+#index-page header button {
   color: white;
+  background-color: transparent;
+  border: transparent;
   font-size: 14px;
   font-weight: 100;
   font-family: "ITC Franklin Gothic Std-Book";
   text-align: center;
   letter-spacing: 0.75px;
   text-decoration-line: underline;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
 }
 
+#index-page.active header button {
+  opacity: 0;
+}
+
+/*---- Main Section ----*/
+
+#index-page main {
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#index-page.active main {
+  width: 100%;
+  opacity: 1;
+  margin: 48px 0;
+}
+
+.card-row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.card {
+  width: 0%;
+  aspect-ratio: 80 / 61;
+  background-color: var(--lightest);
+  transition: all 0.5s ease-out;
+}
+
+#index-page.active .card {
+  width: 100%;
+}
+
+/*---- Brand Carousel ----*/
+
 footer {
+}
+
+.brand-carousel-wrapper {
+  padding: 8px 0;
+  color: var(--lightest);
+  height: 42px;
+  border: solid var(--accent, #5e716a);
+  border-width: 1px 0;
+  overflow: hidden;
+}
+
+.brand-carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  position: relative;
+}
+
+.brand-carousel img {
+  flex-shrink: 0;
 }

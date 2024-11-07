@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
-    <div class="index-page">
+    <div id="index-page">
       <header>
         <video autoplay muted loop class="runway-video">
           <source src="assets/videos/CPHFW-HelloWorld.mp4" type="video/mp4" />
@@ -16,8 +16,18 @@
         </video>
 
         <img src="assets/images/logo.svg" alt="CPHFW logo" />
-        <a href="">Click anywhere to exploreeeee</a>
+        <button id="exploreBtn">Click anywhere to explore</button>
       </header>
+      <main>
+        <div class="card-row">
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+        <div class="card-row">
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+      </main>
       <footer>
         <div class="brand-carousel-wrapper">
           <div class="brand-carousel">
@@ -37,7 +47,8 @@
               alt="logo for jade cropper"
             />
             <img
-              height="19px"4
+              height="19px"
+              4
               src="assets/images/sinead 1.svg"
               alt="logo for sinead"
             />
@@ -46,6 +57,7 @@
         </div>
       </footer>
       <script src="scripts/infinite_scroll.js"></script>
+      <script src="scripts/changeLayout.js"></script>
     </div>
   </body>
 </html>
