@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "ITC Franklin Gothic Std-Demi";
 }
 
 /*---- Banner ----*/
@@ -32,7 +33,7 @@ header {
   overflow: hidden;
   height: 100%;
   padding: 24px;
-  transition: height 0.5s ease-out, padding 0.5s ease-out;
+  transition: height 0.3s ease-out, padding 0.3s ease-out;
 }
 header::before {
   content: "";
@@ -70,7 +71,7 @@ header::before {
   width: 109.457px;
   height: auto;
   object-fit: fit;
-  transition: width 0.5s ease-out;
+  transition: width 0.3s ease-out;
 }
 
 #index-page.active header img {
@@ -107,13 +108,15 @@ header::before {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  transition: all 0.5s ease-out, opacity 0.5s ease-out;
+  transition-delay: 0.5s;
+  transition-property: all, opacity;
+  transition-duration: 0.3s;
 }
 
 #index-page.active main {
   width: 100%;
   opacity: 1;
-  margin: 48px 0;
+  margin: 48px 0 16px;
 }
 
 .card-row {
@@ -130,11 +133,84 @@ header::before {
   width: 0%;
   aspect-ratio: 80 / 61;
   background-color: var(--lightest);
-  transition: all 0.5s ease-out;
+  transition-delay: 0.5s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: baseline;
+  align-items: end;
 }
 
 #index-page.active .card {
   width: 100%;
+}
+
+.card-row:nth-child(1) .card:nth-child(1) {
+  background: url(../assets/images/Schedule-card.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-row:nth-child(1) .card:nth-child(2) {
+  background: url(../assets/images/Designers-card.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.card-row:nth-child(2) .card:nth-child(1) {
+  background: url(../assets/images/Navigation-card.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-row:nth-child(2) .card:nth-child(2) {
+  background: url(../assets/images/insights-card.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card .title {
+  height: 0;
+  width: 100%;
+  padding: 0 12px;
+  font-size: 16px;
+  color: transparent;
+  background-color: var(--lightest);
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  transition-delay: 0.5s, 1s;
+  transition-property: height, color;
+  transition-duration: 0.5s;
+}
+
+#index-page.active .card .title {
+  height: 32px;
+
+  color: var(--darkest);
+}
+
+.language {
+  height: 0;
+  transition-delay: 0.5s;
+  transition-property: height;
+  transition-duration: 0.5s;
+}
+
+#index-page.active .language {
+  height: 24px;
+}
+
+.language img {
+  height: 100%;
+  object-fit: cover;
 }
 
 /*---- Brand Carousel ----*/

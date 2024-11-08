@@ -16,7 +16,7 @@ function resetInactivityTimer() {
   clearTimeout(inactivityTimer);
   inactivityTimer = setTimeout(() => {
     changeLayoutToInactive();
-  }, 2000);
+  }, 20000);
 }
 
 document
