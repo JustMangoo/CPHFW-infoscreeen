@@ -1,4 +1,5 @@
 let inactivityTimer;
+const eventTypes = ["click", "mousemove", "keypress"];
 
 function changeLayoutToInactive() {
   var page = document.getElementById("index-page");
@@ -20,13 +21,12 @@ function resetInactivityTimer() {
 }
 
 document
-  .getElementById("exploreBtn")
+  .getElementById("index-page")
   .addEventListener("click", function (event) {
-    event.preventDefault();
     changeLayoutToActive();
     resetInactivityTimer();
-  })
-
-  [("onclick", "onmousemove", "onkeypress")].forEach((eventType) => {
-    document.addEventListener(eventType, resetInactivityTimer);
   });
+
+eventTypes.forEach((eventType) => {
+  document.addEventListener(eventType, resetInactivityTimer);
+});

@@ -1,0 +1,20 @@
+[
+  {
+    "row": 1,
+    "photo": "assets/images/Instagram-posts/Post/anna_liv_.jpg",
+    "username": "anna_liv_",
+    "profilePic": "assets/images/user1.jpg"
+  },
+  {
+    "row": 1,
+    "photo": "assets/images/post2.jpg",
+    "username": "user2",
+    "profilePic": "assets/images/user2.jpg"
+  },
+  {
+    "row": 2,
+    "photo": "assets/images/post3.jpg",
+    "username": "user3",
+    "profilePic": "assets/images/user3.jpg"
+  }
+]
