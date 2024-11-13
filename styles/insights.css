@@ -54,19 +54,57 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
 }
 
 .carousel-row {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   list-style: none;
   gap: 6px;
 }
 
-.carousel-row li {
-  width: 96px;
+.carousel-row .post {
+  height: 96px;
   aspect-ratio: 1/1;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 39.69%,
+    rgba(0, 0, 0, 0.8) 88.84%
+  );
+  font-size: 10px;
+  font-family: "ITC Franklin Gothic Std-Book";
+  display: flex;
+  align-items: end;
+  padding: 6px;
+}
+
+.carousel-row .post .post-photo {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.carousel-row .post .author {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.carousel-row .post .author img {
+  border-radius: 50%;
+  height: 16px;
+  aspect-ratio: 1/1;
+}
+
+.carousel-row .post .author p {
+  display: flex;
 }
 
 .article-section {

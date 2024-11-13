@@ -218,9 +218,6 @@ header::before {
 /*---- Brand Carousel ----*/
 
 footer {
-}
-
-.brand-carousel-wrapper {
   padding: 8px 0;
   color: var(--lightest);
   height: 42px;

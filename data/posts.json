@@ -1,20 +1,56 @@
 [
   {
     "row": 1,
-    "photo": "assets/images/Instagram-posts/Post/anna_liv_.jpg",
-    "username": "anna_liv_",
-    "profilePic": "assets/images/user1.jpg"
+    "photo": "assets/images/Instagram-posts/Post/chris_nygaard.jpg",
+    "username": "chris_nygaard",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/chris_nygaard.png"
   },
   {
     "row": 1,
-    "photo": "assets/images/post2.jpg",
-    "username": "user2",
-    "profilePic": "assets/images/user2.jpg"
+    "photo": "assets/images/Instagram-posts/Post/anna_liv_.jpg",
+    "username": "anna_liv_",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/anna_liv_.png"
+  },
+  {
+    "row": 1,
+    "photo": "assets/images/Instagram-posts/Post/pookie_3.jpg",
+    "username": "pookie_3",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/pookie_3.png"
+  },
+  {
+    "row": 1,
+    "photo": "assets/images/Instagram-posts/Post/chris_nygaard-2.png",
+    "username": "chris_nygaard",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/chris_nygaard.png"
+  },
+  {
+    "row": 1,
+    "photo": "assets/images/Instagram-posts/Post/chris_nygaard-2.png",
+    "username": "chris_nygaard",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/chris_nygaard.png"
   },
   {
     "row": 2,
-    "photo": "assets/images/post3.jpg",
-    "username": "user3",
-    "profilePic": "assets/images/user3.jpg"
+    "photo": "assets/images/Instagram-posts/Post/the_jonas.jpg",
+    "username": "the_jonas",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/the_jonas.png"
+  },
+  {
+    "row": 2,
+    "photo": "assets/images/Instagram-posts/Post/Gianluca93.jpg",
+    "username": "Gianluca93",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/Gianluca93.png"
+  },
+  {
+    "row": 2,
+    "photo": "assets/images/Instagram-posts/Post/mia_sorensen.jpg",
+    "username": "mia_sorensen",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/mia_sorensen.png"
+  },
+  {
+    "row": 2,
+    "photo": "assets/images/Instagram-posts/Post/shaddyhhs.jpg",
+    "username": "shaddyhhs",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/shaddyhhs.jpg"
   }
 ]
