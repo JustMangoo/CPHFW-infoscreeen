@@ -33,22 +33,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
         carouselRows.forEach((carousel) => {
           let carouselRowNr = parseInt(carousel.dataset.row, 10);
-          let scrollAmount;
 
           carousel.innerHTML += carousel.innerHTML;
 
-          scrollAmount = 0;
+          let scrollAmount = 0;
+          const scrollSpeed = 2;
 
           function animateCarousel() {
-            if (carouselRowNr % 2 == 0) {
-              scrollAmount -= -0.2;
-              if (scrollAmount <= -carousel.scrollWidth / 2) {
+            if (carouselRowNr % 2 === 0) {
+              scrollAmount += scrollSpeed;
+              console.log(scrollAmount);
+              console.log(-carousel.scrollWidth);
+              if (scrollAmount >= carousel.scrollWidth * 1.35) {
                 scrollAmount = 0;
               }
             } else {
-              scrollAmount -= 0.2;
-              if (scrollAmount >= 0) {
-                scrollAmount = -carousel.scrollWidth / 2;
+              scrollAmount -= scrollSpeed;
+
+              if (scrollAmount <= -carousel.scrollWidth / 2) {
+                scrollAmount = 0;
               }
             }
 
