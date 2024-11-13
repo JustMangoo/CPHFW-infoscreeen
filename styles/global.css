@@ -22,38 +22,108 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 body {
+  width: 375px;
+  height: 667px;
+}
+
+.main-container {
   background: linear-gradient(
     180deg,
     #131313 89.59%,
     rgb(26, 26, 26) 96.25%,
     #282828 100%
   );
-  width: 375px;
-  height: 667px;
-}
-
-/*---- Brand Carousel ----*/
-.brand-carousel-wrapper {
-  padding: 8px 0;
-  color: var(--lightest);
-  height: 42px;
-  border: solid var(--accent, #5e716a);
-  border-width: 1px 0;
-  overflow: hidden;
-}
-
-.brand-carousel {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  height: 100%;
   position: relative;
+  z-index: 0;
+  min-height: 100%;
 }
 
-.brand-carousel img {
-  flex-shrink: 0;
+/*---- Navigation Bar ----*/
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "ITC Franklin Gothic Std-Demi";
+}
+
+nav .banner {
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 19, 0) 0%,
+      rgba(19, 19, 19, 0.28) 25.96%,
+      rgba(19, 19, 19, 0.5) 55.04%,
+      rgba(19, 19, 19, 0.75) 87.96%,
+      rgba(19, 19, 19, 0.88) 92.99%,
+      #131313 99.7%
+    ),
+    url(../assets/images/insights-card.jpeg) lightgray 0px -89.557px / 100% 296.296%
+      no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  height: 108px;
+}
+
+nav .left-container img {
+  height: 76.531px;
+  width: auto;
+}
+
+nav .right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  height: 100%;
+}
+
+nav .right-container .language img {
+  height: 15.748px;
+  width: auto;
+}
+
+nav .right-container .socials {
+  display: flex;
+  gap: 5.75px;
+}
+
+nav .right-container .socials img {
+  height: 12.298px;
+  width: auto;
+}
+
+nav .link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 6px;
+}
+
+nav .link-list a {
+  background-color: var(--lightest);
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--darkest);
+  width: 100%;
+  text-align: center;
+  padding: 6px 0;
+}
+
+nav .link-list a:hover {
+  box-sizing: border-box;
+
+  border: solid 2px var(--accent);
 }
