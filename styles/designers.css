@@ -1,0 +1,66 @@
+:root {
+    --darkest: rgba(19, 19, 19, 1);
+    --accent: rgba(94, 113, 106, 1);
+    --lightest: rgba(255, 255, 255, 1);
+  }
+  
+  @font-face {
+    font-family: "ITC Franklin Gothic Std-Book";
+    src: url("assets/fonts/ITCFranklinGothicStd-Book.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ITC Franklin Gothic Std-Demi";
+    src: url("assets/fonts/ITCFranklinGothicStd-Demi.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* ---DESIGNER BOXES--- */
+
+   .designers {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 11px 14px;
+    gap: 12px;
+  }
+  
+  .designer_row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row; 
+    width: 100%;
+    gap: 12px;
+  }
+
+  .card {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgba(217, 217, 217, 0.9);
+    border: 2px solid black;
+    padding: 8px;
+  }
+  
+  .card img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: 100%; /* Make the image take up the full height of the container */
+    object-fit: contain;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .footer_box1 {
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer_box2 {
+    align-content: center;
+    justify-content: space-between;
+  }
