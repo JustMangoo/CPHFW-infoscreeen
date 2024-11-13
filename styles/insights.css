@@ -50,16 +50,23 @@
   gap: 16px;
 }
 
-.photo-carousel {
+.photo-carousels {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  justify-content: center;
+  gap: 6px;
 }
 
 .carousel-row {
   display: flex;
   justify-content: left;
+  align-items: center;
+  list-style: none;
+  gap: 6px;
+}
+
+.carousel-row:nth-child(even) {
+  display: flex;
+  justify-content: right;
   align-items: center;
   list-style: none;
   gap: 6px;

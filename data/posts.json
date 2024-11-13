@@ -25,9 +25,9 @@
   },
   {
     "row": 1,
-    "photo": "assets/images/Instagram-posts/Post/chris_nygaard-2.png",
-    "username": "chris_nygaard",
-    "profilePic": "assets/images/Instagram-posts/Profile Photo/chris_nygaard.png"
+    "photo": "assets/images/Instagram-posts/Post/Antony_Nue.jpg",
+    "username": "Antony_Nue",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/Antony_Nue.png"
   },
   {
     "row": 2,
@@ -52,5 +52,11 @@
     "photo": "assets/images/Instagram-posts/Post/shaddyhhs.jpg",
     "username": "shaddyhhs",
     "profilePic": "assets/images/Instagram-posts/Profile Photo/shaddyhhs.jpg"
+  },
+  {
+    "row": 2,
+    "photo": "assets/images/Instagram-posts/Post/rosellina.jpg",
+    "username": "rosellina",
+    "profilePic": "assets/images/Instagram-posts/Profile Photo/rosellina.png"
   }
 ]

@@ -27,30 +27,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
         carouselRow.appendChild(postItem);
       });
+
+      requestAnimationFrame(() => {
+        const carouselRows = document.querySelectorAll(".carousel-row");
+
+        carouselRows.forEach((carousel) => {
+          let carouselRowNr = parseInt(carousel.dataset.row, 10);
+          let scrollAmount;
+
+          carousel.innerHTML += carousel.innerHTML;
+
+          scrollAmount = 0;
+
+          function animateCarousel() {
+            if (carouselRowNr % 2 == 0) {
+              scrollAmount -= -0.2;
+              if (scrollAmount <= -carousel.scrollWidth / 2) {
+                scrollAmount = 0;
+              }
+            } else {
+              scrollAmount -= 0.2;
+              if (scrollAmount >= 0) {
+                scrollAmount = -carousel.scrollWidth / 2;
+              }
+            }
+
+            carousel.style.transform = `translateX(${scrollAmount}px)`;
+            requestAnimationFrame(animateCarousel);
+          }
+
+          animateCarousel();
+        });
+      });
     })
     .catch((error) => console.error("Error loading posts:", error));
-
-  var carouselRows =
-    document.querySelector(".carousel-row").parentElement.children;
-
-  console.log(carouselRows);
-
-  carouselRows.forEach((carousel) => {
-    carousel.innerHTML += carousel.innerHTML;
-
-    let scrollAmount = 0;
-
-    function animateCarousel() {
-      scrollAmount -= 0.2; // Adjust this value for speed; -1 is slow, increase for faster
-      if (scrollAmount <= -carousel.scrollWidth / 2) {
-        scrollAmount = 0; // Reset scroll amount to loop back
-      }
-      carousel.style.transform = `translateX(${scrollAmount}px)`;
-      requestAnimationFrame(animateCarousel);
-    }
-
-    animateCarousel();
-  });
-
-  // Duplicate all images for infinite effect
 });

@@ -39,6 +39,7 @@ body {
     #282828 100%
   );
   position: relative;
+  overflow-x: hidden;
   z-index: 0;
   min-height: 100%;
 }
