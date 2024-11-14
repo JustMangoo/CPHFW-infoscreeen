@@ -44,6 +44,79 @@ main .map img {
   height: 100%;
 }
 
+main .map .your-location {
+}
+
+main .map .pins {
+  font-family: "ITC Franklin Gothic Std-Demi";
+  font-size: 14px;
+  background-color: var(--accent);
+  width: 22px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--darkest);
+  background-clip: content-box; /* support: IE9+ */
+  position: absolute;
+  outline: 1px solid transparent;
+  padding: 3px;
+}
+
+main .map .your-location {
+  position: absolute;
+  top: 40px;
+  left: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .map .your-location img {
+  width: auto;
+  height: 24px;
+  z-index: 2;
+}
+
+main .map .your-location .shadow {
+  background-color: transparent;
+  margin-top: -2px;
+  width: 11px;
+  height: 3px;
+  border-radius: 50%;
+}
+
+main .map .your-location.focus .shadow {
+  background-color: var(--lightest);
+}
+
+main .map .focus:not(.your-location) {
+  outline: 1px solid var(--lightest);
+  color: var(--lightest);
+}
+
+main .map .pins:nth-child(1) {
+  top: 50px;
+  left: 200px;
+}
+main .map .pins:nth-child(2) {
+  top: 100px;
+  right: 140px;
+}
+main .map .pins:nth-child(3) {
+  bottom: 70px;
+  left: 110px;
+}
+main .map .pins:nth-child(4) {
+  bottom: 40px;
+  right: 60px;
+}
+main .map .pins:nth-child(5) {
+  top: 30px;
+  right: 50px;
+}
+
 .map-container .button-wrapper {
   padding: 8px 16px;
   width: 100%;
@@ -119,7 +192,6 @@ main .map img {
 
 .location-info li .item-text {
   font-size: 16px;
-  text-decoration: underline;
 }
 
 .location-info li .arrow {
