@@ -6,14 +6,14 @@
 
 @font-face {
   font-family: "ITC Franklin Gothic Std-Book";
-  src: url("assets/fonts/ITCFranklinGothicStd-Book.otf");
+  src: url("../assets/fonts/ITCFranklinGothicStd-Book.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ITC Franklin Gothic Std-Demi";
-  src: url("assets/fonts/ITCFranklinGothicStd-Demi.otf");
+  src: url("../assets/fonts/ITCFranklinGothicStd-Demi.otf");
   font-weight: normal;
   font-style: normal;
 }
