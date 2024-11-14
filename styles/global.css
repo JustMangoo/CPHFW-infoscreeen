@@ -122,3 +122,8 @@ nav .link-list a {
   text-align: center;
   padding: 6px 0;
 }
+
+nav .link-list a.active {
+  color: var(--lightest);
+  background-color: var(--accent);
+}

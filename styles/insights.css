@@ -13,32 +13,32 @@
   font-style: normal;
 }
 
-#schedule-page {
+#insporation-page {
   color: var(--lightest);
   font-family: "ITC Franklin Gothic Std-Book";
 }
 
-#schedule-page main {
+#insporation-page main {
   padding: 20px 0 38px;
   display: flex;
   flex-direction: column;
   gap: 31px;
 }
 
-#schedule-page header {
+#insporation-page header {
   padding: 0 24px;
 }
 
-#schedule-page h2 {
+#insporation-page h2 {
   font-family: "ITC Franklin Gothic Std-Demi";
   font-size: 20px;
 }
 
-#schedule-page h3 {
+#insporation-page h3 {
   font-size: 12px;
 }
 
-#schedule-page h3 span {
+#insporation-page h3 span {
   font-family: "ITC Franklin Gothic Std-Demi";
   font-size: 12px;
   color: var(--accent);
