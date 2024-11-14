@@ -1,0 +1,128 @@
+/* Fonts */
+@font-face {
+  font-family: "ITC Franklin Gothic Std-Book";
+  src: url("../assets/fonts/ITCFranklinGothicStd-Book.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC Franklin Gothic Std-Demi";
+  src: url("../assets/fonts/ITCFranklinGothicStd-Demi.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#navigation-page {
+  color: var(--lightest);
+  font-family: "ITC Franklin Gothic Std-Book";
+}
+
+#navigation-page main {
+  padding: 20px 0 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.map-container {
+  height: 210px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+
+main .map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+main .map img {
+  height: 100%;
+}
+
+.map-container .button-wrapper {
+  padding: 8px 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-wrapper button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ITC Franklin Gothic Std-Demi";
+  border-radius: 0;
+  outline: none;
+  border: none;
+  padding: 2px 4px;
+  gap: 2px;
+}
+
+.location-info {
+  width: 100%;
+  border-top: 2px solid var(--accent);
+  padding: 9px 24px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.location-info h2 {
+  font-family: "ITC Franklin Gothic Std-Demi";
+  font-size: 24px;
+  text-align: center;
+}
+
+.location-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.location-info li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--accent);
+  border-width: 0 0 2px 0;
+  padding: 8px 4px;
+}
+
+.location-info li .item-content {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.location-info li img {
+  width: 16px;
+}
+
+.location-info li .item-icon {
+  font-family: "ITC Franklin Gothic Std-Demi";
+  font-size: 14px;
+  background-color: var(--accent);
+  width: 16px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--darkest);
+}
+
+.location-info li .item-text {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.location-info li .arrow {
+  transform: rotateY(180deg);
+  height: 20px;
+}
