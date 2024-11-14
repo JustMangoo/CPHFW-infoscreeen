@@ -37,13 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
           carousel.innerHTML += carousel.innerHTML;
 
           let scrollAmount = 0;
-          const scrollSpeed = 2;
+          const scrollSpeed = 0.2;
 
           function animateCarousel() {
             if (carouselRowNr % 2 === 0) {
               scrollAmount += scrollSpeed;
-              console.log(scrollAmount);
-              console.log(-carousel.scrollWidth);
               if (scrollAmount >= carousel.scrollWidth * 1.35) {
                 scrollAmount = 0;
               }
