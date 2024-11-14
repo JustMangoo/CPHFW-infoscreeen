@@ -122,9 +122,3 @@ nav .link-list a {
   text-align: center;
   padding: 6px 0;
 }
-
-nav .link-list a:hover {
-  box-sizing: border-box;
-
-  border: solid 2px var(--accent);
-}
