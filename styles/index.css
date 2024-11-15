@@ -80,7 +80,6 @@ header::before {
 
 #index-page header .credits {
   color: white;
-
   font-family: "ITC Franklin Gothic Std-Demi";
   text-align: center;
   letter-spacing: 0.75px;
@@ -94,15 +93,15 @@ header::before {
   justify-content: space-between;
 }
 
-.credits .collection {
+#index-page .credits .collection {
   text-align: left;
 }
-.credits h2 {
+#index-page .credits h2 {
   font-size: 16px;
   color: white;
 }
 
-.credits p {
+#index-page .credits p {
   font-family: "ITC Franklin Gothic Std-Book";
   font-size: 8px;
   color: white;
