@@ -1,5 +1,5 @@
 let inactivityTimeout;
-const inactivityLimit = 150000; // Inactivity time limit in milliseconds
+const inactivityLimit = 20000; // Inactivity time limit in milliseconds
 
 function resetInactivityTimer() {
   clearTimeout(inactivityTimeout);
