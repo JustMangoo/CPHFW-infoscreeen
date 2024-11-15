@@ -44,9 +44,6 @@ main .map img {
   height: 100%;
 }
 
-main .map .your-location {
-}
-
 main .map .pins {
   font-family: "ITC Franklin Gothic Std-Demi";
   font-size: 14px;
@@ -57,7 +54,7 @@ main .map .pins {
   justify-content: center;
   border-radius: 50%;
   color: var(--darkest);
-  background-clip: content-box; /* support: IE9+ */
+  background-clip: content-box;
   position: absolute;
   outline: 1px solid transparent;
   padding: 3px;

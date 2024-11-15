@@ -77,8 +77,21 @@ nav .banner {
   height: 108px;
 }
 
+nav .left-container {
+  position: relative;
+}
+
 nav .left-container img {
   height: 76.531px;
+  width: auto;
+}
+
+nav .left-container .back-arrow {
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30%;
   width: auto;
 }
 
