@@ -99,11 +99,13 @@ header::before {
 }
 .credits h2 {
   font-size: 16px;
+  color: white;
 }
 
 .credits p {
   font-family: "ITC Franklin Gothic Std-Book";
   font-size: 8px;
+  color: white;
 }
 
 #index-page.active header .credits {
