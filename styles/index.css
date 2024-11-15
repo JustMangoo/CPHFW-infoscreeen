@@ -78,6 +78,38 @@ header::before {
   width: 37.797px;
 }
 
+#index-page header .credits {
+  color: white;
+
+  font-family: "ITC Franklin Gothic Std-Demi";
+  text-align: center;
+  letter-spacing: 0.75px;
+  opacity: 0;
+  transition-delay: 1s;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  display: flex;
+  width: 100%;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.credits .collection {
+  text-align: left;
+}
+.credits h2 {
+  font-size: 16px;
+}
+
+.credits p {
+  font-family: "ITC Franklin Gothic Std-Book";
+  font-size: 8px;
+}
+
+#index-page.active header .credits {
+  opacity: 1;
+}
+
 #index-page header button {
   color: white;
   background-color: transparent;
@@ -90,10 +122,12 @@ header::before {
   text-decoration-line: underline;
   opacity: 1;
   transition: opacity 0.5s ease-out;
+  display: block;
 }
 
 #index-page.active header button {
   opacity: 0;
+  display: none;
 }
 
 /*---- Main Section ----*/
